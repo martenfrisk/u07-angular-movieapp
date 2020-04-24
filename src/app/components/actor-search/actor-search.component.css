@@ -1,0 +1,12 @@
+.search-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  height: 50px;
+  margin: 40px auto;
+}
+
+.full-width-search {
+  width: 100%;
+}
+/*# sourceMappingURL=actor-search.component.css.map */

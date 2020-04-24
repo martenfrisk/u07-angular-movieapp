@@ -1,0 +1,23 @@
+<mat-toolbar color="primary">
+
+  <button mat-button routerLink="/">
+  <mat-icon>home</mat-icon>
+      Ang. Movie App</button>
+
+  <!-- This fills the remaining space of the current row -->
+  <span class="fill-remaining-space"></span>
+  <div fxLayout="row" fxShow="false" fxShow.gt-sm>
+      <button mat-raised-button routerLink="/">Home</button>
+      <button mat-raised-button routerLink="search-movie">Search movies</button>
+      <button mat-raised-button routerLink="search-actor">Search actors</button>
+  </div>
+  <button mat-button [mat-menu-trigger-for]="menu" fxHide="false" fxHide.gt-sm>
+   <mat-icon>menu</mat-icon>
+  </button>
+
+</mat-toolbar>
+<mat-menu x-position="before" #menu="matMenu">
+  <button mat-button routerLink="/">Home</button>
+  <button mat-button routerLink="search-movie">Search movies</button>
+  <button mat-button routerLink="search-actor">Search actors</button>
+</mat-menu>

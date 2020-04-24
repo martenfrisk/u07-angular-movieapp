@@ -1,0 +1,24 @@
+<app-loading *ngIf="loadingMovies"></app-loading>
+<div class="container main-container animated fadeIn fast">
+
+    <div class="row">
+
+        <div class="col-md-5">
+            <img [src]="actor | moviePoster" [alt]="actor.name" class="img-thumbnail img-fluid">
+        </div>
+
+
+        <div class="col-md-7">
+            <h1>{{ actor.name }}</h1>
+            <hr>
+
+          <div>
+              Popularity: <span class="badge badge-primary">{{ actor.popularity | number:".0-0" }}</span>
+              <br>
+              <p>{{ actor.biography }}</p>
+              <br>
+              Known for: <span>{{ actor.movie_credits.cast[0].title }}</span>
+          </div>
+      </div>
+    </div>
+</div>

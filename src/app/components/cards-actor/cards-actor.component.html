@@ -1,0 +1,6 @@
+<div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutWrap fxLayoutGap="40px" fxLayoutAlign="center" class="cardcontainer cursor-pointer">
+  <mat-card (click)="goToActor(item)" *ngFor="let item of items" class="moviecard"  fxFlex="0 1 calc(20% - 40px)">
+    <h3 class="cardtitle">{{ item.name }}</h3>
+    <img mat-card-image class="card-img" [src]="item | moviePoster" alt="Portrait" />
+  </mat-card>
+</div>

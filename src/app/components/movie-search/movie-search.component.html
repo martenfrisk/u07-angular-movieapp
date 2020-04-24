@@ -1,0 +1,19 @@
+<form class="search-form" onkeydown="
+return event.key != 'Enter';">
+  <mat-form-field class="full-width-search">
+    <mat-label>Search by movie</mat-label>
+      <input
+        matInput
+        #term
+        type="text"
+        (keyup)="search(term.value)"
+        placeholder="Search Movie"
+      >
+  </mat-form-field>
+</form>
+<app-loading *ngIf="loading"></app-loading>
+
+<app-cards *ngIf="!loading" [items]="movies" id="movies"></app-cards>
+
+<app-cards-actor *ngIf="!loading" id="actors" [items]="actors"></app-cards-actor>
+
