@@ -1,8 +1,12 @@
 # To run app:
 
+  clone this repo
+  
+  cd u07-angular-movieapp
+
   npm install
   
-  ng serve --open
+  ng serve -o
 
 # MovieApp
 
