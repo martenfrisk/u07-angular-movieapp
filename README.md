@@ -1,6 +1,8 @@
 # To run app:
-npm install
-ng serve --open
+
+  npm install
+  
+  ng serve --open
 
 # MovieApp
 
